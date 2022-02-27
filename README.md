@@ -25,6 +25,8 @@ Sum=ABCin+Cout(A+B+Cin)  (A+B+Cin) (Cout+ABCin)
 
 ## Implementation in synopsis
 <img width="1371" alt="Reference_Ckt" src="https://user-images.githubusercontent.com/100303714/155870723-b87f7204-b7fb-4771-976d-69f42df4529c.png">
+<img width="1371" alt="Reference_Ckt" src="https://user-images.githubusercontent.com/100303714/155870768-4b5a6569-7d4a-42cb-aada-35b205d60aea.png">
+
 
 
 ## Netlist
@@ -98,8 +100,9 @@ c10 sum gnd! c=1p
 .option parhier = LOCAL
 .end
 
-
-## Conclusion
+## Simulation result
+<img width="1371" alt="Reference_Ckt" src="https://user-images.githubusercontent.com/100303714/155870787-3ccf974b-c391-4f49-8922-4ddb7e35e0d3.png">
+## conclusion
 Thus, the implementation of 1-bit full adder is done using CMOS mirror logic, the output is verified using the synopsis custom compiler.
 
 ## References 
