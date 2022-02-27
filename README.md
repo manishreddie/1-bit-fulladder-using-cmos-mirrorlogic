@@ -1,10 +1,10 @@
 # 1-bit full adder using CMOS mirror logic
   * [Introduction](#introduction)
   * [Working](#working)
-  * [Reference Circuit](#referenceCircuit)
-  * [Implementation in synopsis](# implementation in synopsis)
+  * [Reference Circuit](#reference-circuit)
+  * [Implementation in synopsis](#implementation-in-synopsis)
   * [Netlist](#netlist)
-  * [Simulation result](#simulation result)
+  * [Simulation result](#simulation-result)
   * [Conclusion](#conclusion)
   * [References](#references)
   * [Acknowledgement](#acknowledgement)
@@ -18,7 +18,7 @@ we can design full adder using static cmos logic but it takes nearly 40 transist
 Cout = AB + Cin (A+B)  (A+B) (Cin+AB)
 Sum=ABCin+Cout(A+B+Cin)  (A+B+Cin) (Cout+ABCin)
 
-## Reference Circuit Diagram
+## Reference Circuit
 
 <img width="1371" alt="Reference_Ckt" src="https://user-images.githubusercontent.com/100303714/155870589-67e04581-b4bf-41ec-92e2-6776811d5ade.jpeg">
 
@@ -102,7 +102,7 @@ c10 sum gnd! c=1p
 
 ## Simulation result
 <img width="1371" alt="Reference_Ckt" src="https://user-images.githubusercontent.com/100303714/155870787-3ccf974b-c391-4f49-8922-4ddb7e35e0d3.png">
-## conclusion
+## Conclusion
 Thus, the implementation of 1-bit full adder is done using CMOS mirror logic, the output is verified using the synopsis custom compiler.
 
 ## References 
