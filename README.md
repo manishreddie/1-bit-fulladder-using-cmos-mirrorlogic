@@ -19,8 +19,9 @@ Cout = AB + Cin (A+B)  (A+B) (Cin+AB)
 Sum=ABCin+Cout(A+B+Cin)  (A+B+Cin) (Cout+ABCin)
 
 ## Reference Circuit Diagram
-<img width="1371" alt="Reference_Ckt" src="https://user-images.githubusercontent.com/59500283/155388072-53c63be1-69c2-4d84-90e7-4cb95889fb67.png">
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+<img width="1371" alt="Reference_Ckt" src="https://user-images.githubusercontent.com/100303714/155870589-67e04581-b4bf-41ec-92e2-6776811d5ade.jpeg">
+
 
 ## Implementation in synopsis
 
