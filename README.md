@@ -115,4 +115,4 @@ Thus, the implementation of 1-bit full adder is done using CMOS mirror logic, th
 3. Indian Institute Of Technology (IIT), Hyderabad
 4. Synopsys
 ## author
-R.manish reddy, Amrita vishwa vidhyapeetam coimbatore.
+R.Manish reddy, Amrita vishwa vidhyapeetam coimbatore.
