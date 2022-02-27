@@ -15,8 +15,8 @@
 Full Adder is the adder which adds three inputs and produces two outputs. The first two inputs are A and B and the third input is an input carry as Cin The output carry is designated as Cout and the normal output is designated as SUM
 ## Working
 we can design full adder using static cmos logic but it takes nearly 40 transistors to build it. By using the simple current mirror logic, we can reduce the total number of transistors and power consumption. Indeed, compared to static CMOS logic, it exhibits a very low switching noise, a very high speed and a better power efficiency at high operating frequencies other than a significantly lower sensitivity to process variability. These features are exploited in current high resolution mixed signal Integrated Circuits (ICs), high speed arithmetic cores, multiplexing/demultiplexing ICs for optical fibre communication systems and RF circuits [2]. To implement mirror logic the pull up and pull-down network of carry circuit and sum circuit should be same, with this we can reduce the number of transistors used to build the circuit to 28 and the total power consumption in the circuit. As the full adder equations obeys duality and inversion, we can convert equations of 1-bit full adder  to the following to implement mirror logic easily.
-Cout = AB + Cin (A+B)  (A+B) (Cin+AB)
-Sum=ABCin+Cout(A+B+Cin)  (A+B+Cin) (Cout+ABCin)
+1. Cout = AB + Cin (A+B)  (A+B) (Cin+AB)
+2. Sum=ABCin+Cout(A+B+Cin)  (A+B+Cin) (Cout+ABCin)
 
 ## Reference Circuit
 
