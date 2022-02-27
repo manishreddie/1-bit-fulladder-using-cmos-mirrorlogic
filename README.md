@@ -15,8 +15,8 @@
 Full Adder is the adder which adds three inputs and produces two outputs. The first two inputs are A and B and the third input is an input carry as Cin The output carry is designated as Cout and the normal output is designated as SUM
 ## Working
 we can design full adder using static cmos logic but it takes nearly 40 transistors to build it. By using the simple current mirror logic, we can reduce the total number of transistors and power consumption. Indeed, compared to static CMOS logic, it exhibits a very low switching noise, a very high speed and a better power efficiency at high operating frequencies other than a significantly lower sensitivity to process variability. These features are exploited in current high resolution mixed signal Integrated Circuits (ICs), high speed arithmetic cores, multiplexing/demultiplexing ICs for optical fibre communication systems and RF circuits [2]. To implement mirror logic the pull up and pull-down network of carry circuit and sum circuit should be same, with this we can reduce the number of transistors used to build the circuit to 28 and the total power consumption in the circuit. As the full adder equations obeys duality and inversion, we can convert equations of 1-bit full adder  to the following to implement mirror logic easily.
-1. Cout = AB + Cin (A+B)  (A+B) (Cin+AB)
-2. Sum=ABCin+Cout(A+B+Cin)  (A+B+Cin) (Cout+ABCin)
+1. Cout = AB + Cin (A+B) <=> (A+B) (Cin+AB)
+2. Sum=ABCin+Cout(A+B+Cin) <=> (A+B+Cin) (Cout+ABCin)
 
 ## Reference Circuit
 
@@ -30,6 +30,9 @@ we can design full adder using static cmos logic but it takes nearly 40 transist
 
 
 ## Netlist
+```
+
+
 *  Generated for: PrimeSim
 *  Design library name: cmos_mirror
 *  Design cell name: cmos_mirror_logic_tb
@@ -38,8 +41,9 @@ we can design full adder using static cmos logic but it takes nearly 40 transist
 *Custom Compiler Version S-2021.09
 *Thu Feb 24 04:48:36 2022
 .global gnd!
+
 ********************************************************************************
-* Library          : cmos_mirror
+* Library          : cmos_mirror  
 * Cell             : cmos_mirror_logic
 * View             : schematic
 * View Search List : hspice hspiceD schematic spice veriloga
@@ -99,7 +103,7 @@ c10 sum gnd! c=1p
 .option primesim_output=wdf
 .option parhier = LOCAL
 .end
-
+```
 ## Simulation result
 <img width="1371" alt="Reference_Ckt" src="https://user-images.githubusercontent.com/100303714/155870787-3ccf974b-c391-4f49-8922-4ddb7e35e0d3.png">
 ## Conclusion
