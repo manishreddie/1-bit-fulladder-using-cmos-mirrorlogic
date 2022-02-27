@@ -1,28 +1,30 @@
-•	Introduction
-•	Working
-•	Reference circuit
-•	Implementation in synopsis
-•	Netlist
-•	Simulation result
-•	Conclusion
-•	References
-•	Acknowledgement
-Introduction: 
+# 1-bit full adder using CMOS mirror logic
+  * [Introduction](#introduction)
+  * [Working](#working)
+  * [Reference Circuit](#referenceCircuit)
+  * [Implementation in synopsis](# implementation in synopsis)
+  * [Netlist](#netlist)
+  * [Simulation result](#simulation result)
+  * [Conclusion](#conclusion)
+  * [References](#references)
+  * [Acknowledgement](#acknowledgement)
+  * [Author](#author)
+
+
+## Introduction
 Full Adder is the adder which adds three inputs and produces two outputs. The first two inputs are A and B and the third input is an input carry as Cin The output carry is designated as Cout and the normal output is designated as SUM
-Working:
+## Working
 we can design full adder using static cmos logic but it takes nearly 40 transistors to build it. By using the simple current mirror logic, we can reduce the total number of transistors and power consumption. Indeed, compared to static CMOS logic, it exhibits a very low switching noise, a very high speed and a better power efficiency at high operating frequencies other than a significantly lower sensitivity to process variability. These features are exploited in current high resolution mixed signal Integrated Circuits (ICs), high speed arithmetic cores, multiplexing/demultiplexing ICs for optical fibre communication systems and RF circuits [2]. To implement mirror logic the pull up and pull-down network of carry circuit and sum circuit should be same, with this we can reduce the number of transistors used to build the circuit to 28 and the total power consumption in the circuit. As the full adder equations obeys duality and inversion, we can convert equations of 1-bit full adder  to the following to implement mirror logic easily.
 Cout = AB + Cin (A+B)  (A+B) (Cin+AB)
 Sum=ABCin+Cout(A+B+Cin)  (A+B+Cin) (Cout+ABCin)
-Reference circuit:
- 
 
-Implementation in synopsis:
- 
+## Reference Circuit Diagram
+<img width="1371" alt="Reference_Ckt" src="https://user-images.githubusercontent.com/59500283/155388072-53c63be1-69c2-4d84-90e7-4cb95889fb67.png">
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
+## Implementation in synopsis
 
- 
-
-Netlist:
+## Netlist
 *  Generated for: PrimeSim
 *  Design library name: cmos_mirror
 *  Design cell name: cmos_mirror_logic_tb
@@ -92,16 +94,18 @@ c10 sum gnd! c=1p
 .option primesim_output=wdf
 .option parhier = LOCAL
 .end
-Simulation result:
- 
-Conclusion:
+
+
+## Conclusion
 Thus, the implementation of 1-bit full adder is done using CMOS mirror logic, the output is verified using the synopsis custom compiler.
-References:
- [1] https://youtu.be/BflzLRjsECM 
-[2] H. Lee and G. E. Sobelman, 1997, “A New Low Voltage Full Adder Circuit,” in IEEE proc. 7th great lakes symosium vlsi, pp. 88–92.
- [3]http://www.ijarse.com/images/fullpdf/1444293364_4_Re search_Paper.pdf
-Acknowledgement:
-•	Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
-•	Chinmay panda, IIT Hyderabad
-•	Indian Institute Of Technology (IIT), Hyderabad
-•	Synopsys
+
+## References 
+1. [1] https://youtu.be/BflzLRjsECM 
+2. [2] H. Lee and G. E. Sobelman, 1997, “A New Low Voltage Full Adder Circuit,” in IEEE proc. 7th great lakes symosium vlsi, pp. 88–92.
+3. [3]http://www.ijarse.com/images/fullpdf/1444293364_4_Re search_Paper.pdf
+## Acknowledgement
+1. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
+2. Chinmay panda, IIT Hyderabad
+3. Indian Institute Of Technology (IIT), Hyderabad
+4. Synopsys
+
