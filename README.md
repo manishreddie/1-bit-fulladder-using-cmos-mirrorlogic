@@ -24,6 +24,8 @@ Sum=ABCin+Cout(A+B+Cin)  (A+B+Cin) (Cout+ABCin)
 
 
 ## Implementation in synopsis
+<img width="1371" alt="Reference_Ckt" src="https://user-images.githubusercontent.com/100303714/155870723-b87f7204-b7fb-4771-976d-69f42df4529c.png">
+
 
 ## Netlist
 *  Generated for: PrimeSim
